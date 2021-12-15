@@ -1,0 +1,26 @@
+﻿@model UI.Models.ViewModels.Customers.CustomerViewModel
+@if (Model != null)
+{ 
+<div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Name : </label>
+        <label asp-for="Name" class="control-label"> @Html.DisplayFor(m => Model.CustomerId) </label>
+    </div>
+    <div class="form-group">
+        <label asp-for="CompanyRegistrationNumber" class="control-label">Company Registration Number : </label>
+        <label asp-for="Name" class="control-label"> @Html.DisplayFor(m => Model.CompanyRegistrationNumber) </label>
+    </div>
+    <div class="form-group">
+        <label asp-for="IncorporationDate" class="control-label">Incorporation Date : </label>
+        <label asp-for="Name" class="control-label"> @Html.DisplayFor(m => Model.IncorporationDate) </label>
+    </div>
+    <div class="form-group">
+        <label asp-for="TurnOver" class="control-label">Turn Over : </label>
+        <label asp-for="Name" class="control-label"> @Html.DisplayFor(m => Model.TurnOver) </label>
+    </div>
+    <div class="form-group">
+        <label asp-for="IsActive" class="control-label">IsActive : </label>
+        <label asp-for="Name" class="control-label"> @Html.DisplayFor(m => Model.IsActive)</label>
+    </div>
+</div>
+}
